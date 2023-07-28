@@ -9,5 +9,5 @@ It exists 4 possible coordinate representations but only two are used in genomic
 
 Please find below a summary of the topic:
 
-<img src="coordinate_systems.png" /> 
+<img src="docs/cheat_sheet/coordinate_systems.png" /> 
 

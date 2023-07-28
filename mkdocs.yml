@@ -1,0 +1,105 @@
+# Project information
+site_name: 'The nightmare of coordinate systems in genomics'
+site_author: 'Jacques Dainat'
+site_url: 'https://juke34.github.io/coordinate_systems/'
+site_description: Coordinate Systems Cheat Sheet 
+site_dir: public # When you build your site, all of the files are written to the directory assigned to the site_dir configuration option (defaults to "site")
+
+# Repository
+repo_name: 'coordinate_systems'
+repo_url: 'https://github.com/juke34/coordinate_systems'
+edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
+
+# Configuration
+theme:
+  name: material
+  #logo: pages/img/ # logo top left page
+  search_index_only: true
+  include_search_page: true
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+  # - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections # collapse subsections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate # remove table of content on the right side
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.snippets:
+      base_path: docs
+  - attr_list
+  - tables
+  - toc:
+    #  toc_depth: 3
+      permalink: '#'
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - external-markdown
+  - macros
+
+# css
+extra_css:
+  - stylesheets/extra.css
+
+# javascripts
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+# Customization
+extra:
+#  homepage:  # Page displayed when clicking the logo
+  history_buttons: false
+  # --- set whole scope variables ---
+  color_table_header: "#333a99"
+
+# page tree
+nav:
+    - general : index.md
+    - variant : variants.md
+    - cheat sheet: cheat_sheet/cheat_sheet.md
+    - Ressources : ressources.md      
+   
+
+
+
